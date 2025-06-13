@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 100px;
+    background-color: #0a0e13;
+    color: #363a4d;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 150px;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.calculator {
+    width: 400px;
+    border: 2px #333 solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #1b2030;
+}
+
+.screen {
+    padding: 10px 20px;
+    border: 2px #333 solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #363a4d;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.screen-last {
+    min-height: 32px;
+    font-size: 20px;
+}
+
+.screen-current {
+    min-height: 64px;
+    font-size: 40px;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    border: 2px #333 solid;
+    border-radius: 5px;
+    background-color: #363a4d;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #2b2e3e;
+}
+
+.btn:active {
+    background-color: #363a4d;
+}
+
+.btn-deletion {
+    background-color: #e33434;
+}
+
+.btn-deletion:hover {
+    background-color: #cd3030;
+}
+
+.btn-deletion:active {
+    background-color: #e33434;
+}
+
+.btn-operator {
+    background-color: #3882f6;
+}
+
+.btn-operator:hover {
+    background-color: #3478e3;
+}
+
+.btn-operator:active {
+    background-color: #3882f6;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 20px;
+}
